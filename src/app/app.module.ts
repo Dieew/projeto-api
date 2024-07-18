@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -13,6 +14,7 @@ import { ListarClienteComponent } from './listar-cliente/listar-cliente.componen
 import { CadastrarClienteComponent } from './cadastrar-cliente/cadastrar-cliente.component';
 import { AtualizarClienteComponent } from './atualizar-cliente/atualizar-cliente.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
 declarations: [
 AppComponent,
@@ -31,7 +33,8 @@ MatToolbarModule,
 MatFormFieldModule,
 MatButtonModule,
 FormsModule,
-ReactiveFormsModule
+ReactiveFormsModule,
+MatSnackBarModule
 ],
 providers: [],
 bootstrap: [AppComponent]
